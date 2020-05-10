@@ -44,14 +44,17 @@ def hcf(lst):  # GCD
         
 def facto(lst):
   n=lst[0]
-  ans=fact(n)
-  return ans
 
-  def fact(n)
+
+
+  def fact(n):
     if n==1:
       return 1
     else:
-    return fact(n-1)*n
+      return fact(n-1)*n
+  ans=fact(n)
+  return ans
+  
   
   
 
