@@ -1,4 +1,4 @@
-responses = ["welcome to smart calculator", "my name is Samani Bhavesh but you can call me as SB", "Thanks",
+responses = ["welcome to a smart calculator", "my name is Bhavesh but you can call me as SB.", "Thanks",
              "sorry, this is beyond my ability"]
 
 
@@ -41,6 +41,24 @@ def hcf(lst):  # GCD
                 if s == len(lst):
                     return (small)
         small -= 1
+        
+def facto(lst):
+  n=lst[0]
+
+
+
+  def fact(n):
+    if n==1:
+      return 1
+    else:
+      return fact(n-1)*n
+  ans=fact(n)
+  return ans
+  
+  
+  
+
+
 
 
 def sum(lt):
@@ -94,7 +112,7 @@ def sorry():
     print(responses[3])
 
 
-operation = {'LARGEST': largest,"TOH":TOH,'BIGGEST': largest, 'LCM': lcm, 'HCF': hcf,
+operation = {'LARGEST': largest,"TOH":TOH,'BIGGEST': largest, 'LCM': lcm, 'HCF': hcf,'FACTORIAL':facto,
              'SUM': sum, 'SUMMATION': sum, 'ADD': sum, 'SUBTRACTION': sub, 'SUBTRACT': sub, 'MINUS': sub,
              'MULTIPLICATION': mul, 'MULTIPLY': mul, 'DIVISION': div, 'DIVIDE': div}
 command = {'NAME': name, 'EXIT': end, 'CLOSE': end, 'END': end}
