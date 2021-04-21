@@ -1,2 +1,2 @@
-# web1
+# python application
 it's website for library
